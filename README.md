@@ -1,2 +1,3 @@
-# dhl-api-js
-The DHL API Javascript implementation
+# DHL API for Javascript
+
+The DHL API Javascript implementation.
