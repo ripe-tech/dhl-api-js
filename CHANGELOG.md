@@ -10,10 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 * Improved error handling using content type based parsing of payload
-* Base production URL
 
 ## [0.1.0] - 2021-05-18
 
 ### Added
 
+* Base production URL
 * Initial version
