@@ -21,7 +21,12 @@ export const DOMESTIC_EXPRESS = "N";
 /**
  * The code representing a domestic express shipment.
  */
-export const WORLRDWIDE_EXPRESS = "D";
+export const WORLDWIDE_EXPRESS_DOX = "D";
+
+/**
+ * The code representing an express shipment from the EU outwards.
+ */
+export const WORLDWIDE_EXPRESS_WPX = "P";
 
 /**
  * The document upload code for an invoice.
@@ -63,6 +68,15 @@ export const ShipmentAPI = superclass =>
         async createShipment(payload, options = {}) {
             const url = this.baseUrl + "shipments";
             const response = await this.post(url, {
+                dataJ: payload,
+                ...options
+            });
+            return response;
+        }
+
+        async uploadDocument(trackingNumber, payload, options = {}) {
+            const url = `${this.baseUrl}shipments/${trackingNumber}/upload-image`;
+            const response = await this.patch(url, {
                 dataJ: payload,
                 ...options
             });
