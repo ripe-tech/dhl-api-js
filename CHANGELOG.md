@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* Improved error handling using content type based parsing of payload
-* Shipment API constants
+* Improved error handling using content type based parsing of payload - [#74](https://github.com/ripe-tech/peri-shipping/issues/74)
+* Shipment API constants - [#74](https://github.com/ripe-tech/peri-shipping/issues/74)
 
 ## [0.1.0] - 2021-05-18
 
