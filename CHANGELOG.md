@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+*
+
+### Fixed
+
+*
+
+## Changed
+
+*
+
+## [0.2.0] - 2022-01-24
+
+### Added
+
 * Improved error handling using content type based parsing of payload - [#74](https://github.com/ripe-tech/peri-shipping/issues/74)
 * Shipment API constants - [#74](https://github.com/ripe-tech/peri-shipping/issues/74)
 * Adds `uploadDocument` API method - [#74](https://github.com/ripe-tech/peri-shipping/issues/74)
