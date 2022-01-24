@@ -29,7 +29,7 @@ export class API extends mix(BaseAPI).with(ShipmentAPI) {
 
     async _handleResponse(response) {
         const result = await this._getResult(response);
-        const failure = result.status && result.status.toString()[0] !== "2";
+        const failure = result.status && result.status !== "OK" && result.status.toString()[0] !== "2";
         verify(!failure, JSON.stringify(result), result.status || 500);
         return result;
     }
