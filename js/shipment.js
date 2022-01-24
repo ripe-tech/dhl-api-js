@@ -63,6 +63,11 @@ export const CUSTOM_DECLARATION_DOC_TYPE = "DCL";
  */
 export const WAYBILL_DOC_TYPE = "AWB";
 
+/**
+ * The code for a paperless DHL shipment.
+ */
+export const DHL_PAPERLESS_CODE = "WY";
+
 export const ShipmentAPI = superclass =>
     class extends superclass {
         async createShipment(payload, options = {}) {
