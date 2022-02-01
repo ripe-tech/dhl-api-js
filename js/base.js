@@ -1,10 +1,11 @@
 import { API as BaseAPI, conf, load, mix, verify } from "yonius";
 
+import { PickupAPI } from "./pickup";
 import { ShipmentAPI } from "./shipment";
 
 const BASE_URL = "https://express.api.dhl.com/mydhlapi/";
 
-export class API extends mix(BaseAPI).with(ShipmentAPI) {
+export class API extends mix(BaseAPI).with(PickupAPI, ShipmentAPI) {
     constructor(kwargs = {}) {
         super(kwargs);
         this.baseUrl = conf("DHL_BASE_URL", BASE_URL);
