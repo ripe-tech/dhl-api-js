@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* The `PickupAPI` module and `schedulePickup` method - [#91](https://github.com/ripe-tech/peri-shipping/issues/91)
+*
 
 ### Fixed
 
@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 *
+
+## [0.3.0] - 2022-02-01
+
+### Added
+
+* The `PickupAPI` module and `schedulePickup` method - [#91](https://github.com/ripe-tech/peri-shipping/issues/91)
 
 ## [0.2.0] - 2022-01-24
 
