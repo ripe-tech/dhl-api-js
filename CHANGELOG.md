@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-*
+* `TrackingAPI` module and `getTracking` method - [#92](https://github.com/ripe-tech/peri-shipping/issues/92)
 
 ### Fixed
 
