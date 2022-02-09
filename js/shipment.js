@@ -87,4 +87,10 @@ export const ShipmentAPI = superclass =>
             });
             return response;
         }
+
+        async getProofOfDelivery(trackingNumber, options = {}) {
+            const url = `${this.baseUrl}shipments/${trackingNumber}/proof-of-delivery`;
+            const response = await this.get(url, options);
+            return response;
+        }
     };
