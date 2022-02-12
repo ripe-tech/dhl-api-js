@@ -9,11 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* Added `getProofOfDelivery` method - [#90](https://github.com/ripe-tech/peri-shipping/issues/90)
+*
 
 ### Fixed
 
 *
+
+## Changed
+
+*
+
+## [0.5.0] - 2022-02-11
+
+### Added
+
+* Added `getProofOfDelivery` method - [#90](https://github.com/ripe-tech/peri-shipping/issues/90)
 
 ## Changed
 
