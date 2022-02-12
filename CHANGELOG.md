@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 
-*
+* Product/service codes for different shipment types - [#74](https://github.com/ripe-tech/peri-shipping/issues/74)
 
 ## [0.4.0] - 2022-02-04
 

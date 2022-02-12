@@ -14,19 +14,24 @@ export const IMPERIAL = "imperial";
 export const INCOTERM_DAP = "DAP";
 
 /**
- * The code representing a domestic express shipment.
+ * The product code representing a DOM shipment.
  */
-export const DOMESTIC_EXPRESS = "N";
+export const PRODUCT_DOM = "N";
 
 /**
- * The code representing a domestic express shipment.
+ * The product code representing a DOX shipment.
  */
-export const WORLDWIDE_EXPRESS_DOX = "D";
+export const PRODUCT_DOX = "D";
 
 /**
- * The code representing an express shipment from the EU outwards.
+ * The product code representing a WPX shipment.
  */
-export const WORLDWIDE_EXPRESS_WPX = "P";
+export const PRODUCT_WPX = "P";
+
+/**
+ * The product code representing a ECX shipment.
+ */
+export const PRODUCT_ECX = "U";
 
 /**
  * The document upload code for an invoice.
