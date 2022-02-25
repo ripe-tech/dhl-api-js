@@ -40,6 +40,10 @@ export const STATUS_RETURNED = "RT";
 
 export const TrackingAPI = superclass =>
     class extends superclass {
+        getTrackingUrl(trackingNumber) {
+            return `https://www.dhl.com/global-en/home/tracking/tracking-express.html?submit=1&tracking-id=${trackingNumber}`;
+        }
+
         async getTracking(trackingNumber, options = {}) {
             const url = this.baseUrl + "tracking";
 
