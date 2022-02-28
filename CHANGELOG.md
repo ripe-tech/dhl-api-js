@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* Added `getTrackingUrl` method
+*
 
 ### Fixed
 
@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 *
+
+## [0.6.0] - 2022-02-28
+
+### Added
+
+* Added `getTrackingUrl` method
 
 ## [0.5.0] - 2022-02-11
 
