@@ -1,7 +1,7 @@
 {
     "name": "dhl-api",
-    "version": "0.5.0",
-    "description": "The RIPE ID API client",
+    "version": "0.6.0",
+    "description": "The RIPE DHL API client",
     "keywords": [
         "api",
         "client",
