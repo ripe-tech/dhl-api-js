@@ -71,7 +71,12 @@ export const WAYBILL_DOC_TYPE = "AWB";
 /**
  * The code for a paperless DHL shipment.
  */
-export const DHL_PAPERLESS_CODE = "WY";
+export const SERVICE_PAPERLESS = "WY";
+
+/**
+ * The code for a Go Green DHL shipment.
+ */
+export const SERVICE_GO_GREEN = "EE";
 
 export const ShipmentAPI = superclass =>
     class extends superclass {
