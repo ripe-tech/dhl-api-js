@@ -9,6 +9,21 @@ export const STATUS_AGREED_DELIVERY = "AD";
 export const STATUS_ARRIVED_FACILITY = "AF";
 
 /**
+ * Shipment controllable clearence delay.
+ */
+export const STATUS_CLEARENCE_DELAY = "CD";
+
+/**
+ * Shipment clearence release.
+ */
+export const STATUS_CLEARENCE_RELEASE = "CR";
+
+/**
+ * Shipment closed.
+ */
+export const STATUS_CLOSED_SHIPMENT = "CS";
+
+/**
  * Shipment depart facility checkpoint.
  */
 export const STATUS_DEPART_FACILITY = "DF";
@@ -17,6 +32,11 @@ export const STATUS_DEPART_FACILITY = "DF";
  * Shipment destroyed checkpoint.
  */
 export const STATUS_DESTROYED = "DS";
+
+/**
+ * Shipment missed delivery cycle.
+ */
+export const STATUS_MISSED_DELIVERY = "MD";
 
 /**
  * Shipment delivered checkpoint.
@@ -37,6 +57,16 @@ export const STATUS_PICKUP = "PU";
  * Shipment returned checkpoint.
  */
 export const STATUS_RETURNED = "RT";
+
+/**
+ * Shipment transport delay.
+ */
+export const STATUS_TRANSPORT_DELAY = "TD";
+
+/**
+ * Shipment uncontrollable clearence delay.
+ */
+export const STATUS_UNCONTROLLABLE_DELAY = "UD";
 
 export const TrackingAPI = superclass =>
     class extends superclass {
