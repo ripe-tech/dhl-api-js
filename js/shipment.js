@@ -87,12 +87,12 @@ export const GO_GREEN_LOGO =
 export const ShipmentAPI = superclass =>
     class extends superclass {
         /**
-         *
-         * Creates a shipment and associated UPS waybill.
+         * Creates a shipment and associated DHL waybill.
          *
          * @param {Object} payload The payload object according to the DHL API standards.
          * @param {Object} options An object of options to configure the request.
          * @returns {Object} The HTTP response object.
+         * @see https://developer.dhl.com/api-reference/dhl-express-mydhl-api#reference-docs-section/operations-pickup-exp-api-pickups
          */
         async createShipment(payload, options = {}) {
             const url = this.baseUrl + "shipments";
@@ -104,12 +104,13 @@ export const ShipmentAPI = superclass =>
         }
 
         /**
-         * Uploads documents to UPS server.
+         * Uploads a document to the DHL server for a shipment.
          *
-         * @param {String} trackingNumber is the number of the shipment/waybill.
+         * @param {String} trackingNumber The tracking number of the shipment/waybill
          * @param {Object} payload The payload object according to the DHL API standards.
          * @param {Object} options An object of options to configure the request.
          * @returns {Object} The HTTP response object.
+         * @see https://developer.dhl.com/api-reference/dhl-express-mydhl-api#reference-docs-section/operations-pickup-exp-api-pickups
          */
         async uploadDocument(trackingNumber, payload, options = {}) {
             const url = `${this.baseUrl}shipments/${trackingNumber}/upload-image`;
@@ -119,14 +120,14 @@ export const ShipmentAPI = superclass =>
             });
             return response;
         }
-
         /**
          *
-         * Gets proof of delivery of shipment.
+         * Gets proof of delivery for a shipment.
          *
-         * @param {String} trackingNumber is the number of the shipment/waybill.
+         * @param {String} trackingNumber The tracking number of the shipment/waybill.
          * @param {Object} options An object of options to configure the request.
          * @returns {Object} The HTTP response object.
+         * @see https://developer.dhl.com/api-reference/dhl-express-mydhl-api#reference-docs-section/operations-pickup-exp-api-pickups
          */
         async getProofOfDelivery(trackingNumber, options = {}) {
             const url = `${this.baseUrl}shipments/${trackingNumber}/proof-of-delivery`;

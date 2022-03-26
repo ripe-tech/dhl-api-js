@@ -2,6 +2,20 @@
 
 The DHL API Javascript client implementation.
 
+```javascript
+const dhlAPI = require("dhl-api");
+
+// instance the DHL client with defaults
+const dhl = new dhlApi.API({
+    username: "mydhlaccount",
+    password: "mydhlaccountpassword",
+    license: "3F9955C3F789C255"
+});
+
+// example: request tracking information
+const tracking = await api.getTrackingDetails("7798339175");
+```
+
 ## Configuration
 
 | Name             | Type  | Default                                 | Description                                                    |
