@@ -36,6 +36,7 @@ export class API extends mix(BaseAPI).with(PickupAPI, ShipmentAPI, TrackingAPI) 
         verify(!failure, JSON.stringify(result), result.status || 500);
         return result;
     }
+
     /**
      * Obtains the response object from the provided response making sure that the
      * content type is respected when doing so.

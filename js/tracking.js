@@ -73,6 +73,7 @@ export const TrackingAPI = superclass =>
         getTrackingUrl(trackingNumber) {
             return `https://www.dhl.com/global-en/home/tracking/tracking-express.html?submit=1&tracking-id=${trackingNumber}`;
         }
+
         /**
          *
          * Gets shipment tracking information.

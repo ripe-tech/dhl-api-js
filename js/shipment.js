@@ -120,6 +120,7 @@ export const ShipmentAPI = superclass =>
             });
             return response;
         }
+
         /**
          *
          * Gets proof of delivery for a shipment.
