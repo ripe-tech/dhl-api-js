@@ -45,7 +45,6 @@ export class API extends mix(BaseAPI).with(PickupAPI, ShipmentAPI, TrackingAPI) 
      * made by the API client
      * @returns {Object|String|Blob} The parsed result value for the provided
      * response object taking into account the content type of it.
-     * @see https://developer.dhl.com/api-reference/dhl-express-mydhl-api#reference-docs-section/operations-pickup-exp-api-pickups
      */
     async _getResult(response) {
         const contentType = response.headers.get("content-type")
