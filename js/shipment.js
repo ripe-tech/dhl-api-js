@@ -122,7 +122,6 @@ export const ShipmentAPI = superclass =>
         }
 
         /**
-         *
          * Gets proof of delivery for a shipment.
          *
          * @param {String} trackingNumber The tracking number of the shipment/waybill.
