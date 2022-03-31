@@ -7,8 +7,8 @@ const dhlAPI = require("dhl-api");
 
 // instance the API client with defaults
 const dhl = new dhlApi.API({
-    username: "DHL_USERNAME",
-    password: "DHL_PASSWORD",
+    username: "mydhlaccount",
+    password: "mydhlaccountpassword",
 });
 
 // example: request tracking information
