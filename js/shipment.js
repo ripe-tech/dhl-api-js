@@ -104,7 +104,8 @@ export const ShipmentAPI = superclass =>
         }
 
         /**
-         * Uploads a document to the DHL server for a shipment.
+         * Uploads a document for a shipment to the DHL server.
+
          *
          * @param {String} trackingNumber The tracking number of the shipment/waybill.
          * @param {Object} payload The payload object according to the DHL API standards.
