@@ -86,6 +86,14 @@ export const GO_GREEN_LOGO =
 
 export const ShipmentAPI = superclass =>
     class extends superclass {
+        /**
+         * Creates a shipment and associated DHL waybill.
+         *
+         * @param {Object} payload The payload object according to the DHL API standards.
+         * @param {Object} options An object of options to configure the request.
+         * @returns {Object} The HTTP response object.
+         * @see https://developer.dhl.com/api-reference/dhl-express-mydhl-api#reference-docs-section
+         */
         async createShipment(payload, options = {}) {
             const url = this.baseUrl + "shipments";
             const response = await this.post(url, {
@@ -95,6 +103,15 @@ export const ShipmentAPI = superclass =>
             return response;
         }
 
+        /**
+         * Uploads a document for a shipment to the DHL server.
+         *
+         * @param {String} trackingNumber The tracking number of the shipment/waybill.
+         * @param {Object} payload The payload object according to the DHL API standards.
+         * @param {Object} options An object of options to configure the request.
+         * @returns {Object} The HTTP response object.
+         * @see https://developer.dhl.com/api-reference/dhl-express-mydhl-api#reference-docs-section
+         */
         async uploadDocument(trackingNumber, payload, options = {}) {
             const url = `${this.baseUrl}shipments/${trackingNumber}/upload-image`;
             const response = await this.patch(url, {
@@ -104,6 +121,15 @@ export const ShipmentAPI = superclass =>
             return response;
         }
 
+        /**
+         * Gets proof of delivery document of a shipment.
+
+         *
+         * @param {String} trackingNumber The tracking number of the shipment/waybill.
+         * @param {Object} options An object of options to configure the request.
+         * @returns {Object} The HTTP response object.
+         * @see https://developer.dhl.com/api-reference/dhl-express-mydhl-api#reference-docs-section
+         */
         async getProofOfDelivery(trackingNumber, options = {}) {
             const url = `${this.baseUrl}shipments/${trackingNumber}/proof-of-delivery`;
             const response = await this.get(url, options);

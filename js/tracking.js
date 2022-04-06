@@ -74,6 +74,14 @@ export const TrackingAPI = superclass =>
             return `https://www.dhl.com/global-en/home/tracking/tracking-express.html?submit=1&tracking-id=${trackingNumber}`;
         }
 
+        /**
+         * Gets the tracking information of a shipment.
+         *
+         * @param {String} trackingNumber The tracking number of the shipment/waybill.
+         * @param {Object} options An object of options to configure the request.
+         * @returns {Object} The HTTP response object.
+         * @see https://developer.dhl.com/api-reference/dhl-express-mydhl-api#reference-docs-section
+         */
         async getTracking(trackingNumber, options = {}) {
             const url = this.baseUrl + "tracking";
 
