@@ -75,8 +75,7 @@ export const TrackingAPI = superclass =>
         }
 
         /**
-         * Gets the tracking information of a shipment
-
+         * Gets the tracking information of a shipment.
          *
          * @param {String} trackingNumber The tracking number of the shipment/waybill.
          * @param {Object} options An object of options to configure the request.
