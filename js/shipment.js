@@ -14,9 +14,14 @@ export const IMPERIAL = "imperial";
 export const INCOTERM_DAP = "DAP";
 
 /**
- * The product code representing a DOM shipment.
+ * The product code representing a BBX shipment.
  */
-export const PRODUCT_DOM = "N";
+export const PRODUCT_BBX = "B";
+
+/**
+ * The product code representing a CMX shipment.
+ */
+export const PRODUCT_CMX = "C";
 
 /**
  * The product code representing a DOX shipment.
@@ -24,14 +29,84 @@ export const PRODUCT_DOM = "N";
 export const PRODUCT_DOX = "D";
 
 /**
+ * The product code representing a TDE shipment.
+ */
+export const PRODUCT_TDE = "E";
+
+/**
+ * The product code representing a DES shipment.
+ */
+export const PRODUCT_DES = "G";
+
+/**
+ * The product code representing a ESI shipment.
+ */
+export const PRODUCT_ESI = "H";
+
+/**
+ * The product code representing a DOK shipment.
+ */
+export const PRODUCT_DOK = "I";
+
+/**
+ * The product code representing a TDK shipment.
+ */
+export const PRODUCT_TDK = "K";
+
+/**
+ * The product code representing a TDL shipment.
+ */
+export const PRODUCT_TDL = "L";
+
+/**
+ * The product code representing a TDM shipment.
+ */
+export const PRODUCT_TDM = "M";
+
+/**
+ * The product code representing a DOM shipment.
+ */
+export const PRODUCT_DOM = "N";
+
+/**
+ * The product code representing a DOL shipment.
+ */
+export const PRODUCT_DOL = "O";
+
+/**
  * The product code representing a WPX shipment.
  */
 export const PRODUCT_WPX = "P";
 
 /**
+ * The product code representing a WMX shipment.
+ */
+export const PRODUCT_WMX = "Q";
+
+/**
+ * The product code representing a TDT shipment.
+ */
+export const PRODUCT_TDT = "T";
+
+/**
  * The product code representing a ECX shipment.
  */
 export const PRODUCT_ECX = "U";
+
+/**
+ * The product code representing a ESU shipment.
+ */
+export const PRODUCT_ESU = "W";
+
+/**
+ * The product code representing a XPD shipment.
+ */
+export const PRODUCT_XPD = "X";
+
+/**
+ * The product code representing a TDY shipment.
+ */
+export const PRODUCT_TDY = "Y";
 
 /**
  * The document upload code for an invoice.
