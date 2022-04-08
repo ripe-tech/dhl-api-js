@@ -109,6 +109,18 @@ export const PRODUCT_XPD = "X";
 export const PRODUCT_TDY = "Y";
 
 /**
+ * The product code representing a TDY shipment.
+ */
+export const TAXABLE_PRODUCTS = [
+    PRODUCT_TDE,
+    PRODUCT_ESI,
+    PRODUCT_TDM,
+    PRODUCT_WPX,
+    PRODUCT_WMX,
+    PRODUCT_TDY
+];
+
+/**
  * The document upload code for an invoice.
  */
 export const INVOICE_DOC_TYPE = "INV";

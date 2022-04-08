@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Added new shipment status codes - [peri-shipping/#116](https://github.com/ripe-tech/peri-shipping/issues/116)
 * Added new shipment service/product codes
+* Added list of taxable/dutiable service/product codes
 
 ### Fixed
 
