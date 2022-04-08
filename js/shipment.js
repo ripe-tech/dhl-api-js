@@ -109,7 +109,7 @@ export const PRODUCT_XPD = "X";
 export const PRODUCT_TDY = "Y";
 
 /**
- * The product code representing a TDY shipment.
+ * The list of product codes that are taxable.
  */
 export const TAXABLE_PRODUCTS = [
     PRODUCT_TDE,
