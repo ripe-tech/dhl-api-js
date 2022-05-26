@@ -11,13 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 *
 
-### Fixed
-
-*
-
 ## Changed
 
 *
+
+### Fixed
+
+* Fix eslint dependencies problems
 
 ## [0.6.2] - 2022-04-08
 
