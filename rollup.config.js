@@ -13,7 +13,7 @@ const nodePath = process.env.NODE_PATH
     : null;
 const banner =
     "/**\n" +
-    ` * RIPE ID API (for Javascript) ${pkg.version}.\n` +
+    ` * RIPE DHL API (for Javascript) ${pkg.version}.\n` +
     " *\n" +
     ` * Copyright (c) 2014-${new Date().getFullYear()} Platforme International.\n` +
     " *\n" +
