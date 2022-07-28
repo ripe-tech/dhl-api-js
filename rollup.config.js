@@ -25,7 +25,7 @@ export default [
     {
         input: "js/index.js",
         output: {
-            name: "ripeId",
+            name: "dhlApi",
             file: pkg.browser,
             banner: banner,
             format: "umd",
